@@ -170,9 +170,9 @@ class_field_input=input("Which QGIS attribute do you want to use to identify COC
 
 geotiff_to_coco_tiles(
  # your geoTiff image path and filename 
-    geotiff_path="test-monticellitif2.tif",
+    geotiff_path="test-geotiffimage.tif",
  # your geoJson file path and filename 
-    geojson_path="geojson-test-monticelli.geojson",
+    geojson_path="geojson-test-file.geojson",
 # attribute name in QGIS used to create COCO labels 
 #    class_field="tipocase",
     class_field=class_field_input,
@@ -184,4 +184,5 @@ geotiff_to_coco_tiles(
     overlap=200,
     output_format="jpg"
 )
+
 
