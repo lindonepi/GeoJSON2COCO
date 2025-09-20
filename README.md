@@ -11,5 +11,8 @@ You must also enter the name of the field (attribute) that you used in your GIS 
 
 After running the script, you will find the file with the COCO annotations and the tile images   in the specified output folder. (file format = JPG)
 
-If you want to use your COCO annotation file with software such as YOLO, you must first use a COCO2YOLO script to generate annotations in YOLO format. You can use other scripts to convert COCO to other formats such as VOC.
+If you want to use your COCO annotation file with software such as YOLO, you must first use a COCO2YOLO-Seg  ( https://github.com/z00bean/coco2yolo-seg/blob/main/COCO2YOLO-seg.py) script to generate annotations in YOLO format. You can use other scripts to convert COCO to other formats such as VOC.
+
+If, on the other hand, you want to convert YOLOv11 segmentation output (predictions) to GeoJSON format, you can use my script YOLOv11Seg2GeoJSON ( link 
+https://github.com/lindonepi/Yolov11Seg2GeoJSON )
 
