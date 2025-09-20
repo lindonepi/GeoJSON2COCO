@@ -1,3 +1,10 @@
+"""
+Author: LINDO NEPI 
+Date: September 20, 2025
+GPL v3.0 License
+
+"""
+
 import os
 import sys
 import json
@@ -177,3 +184,4 @@ geotiff_to_coco_tiles(
     overlap=200,
     output_format="jpg"
 )
+
