@@ -50,6 +50,7 @@ def geotiff_to_coco_tiles(
       print("ERROR - we cannot find your attribute in GeoJson.Did you insert the correct attribute?")
       sys.exit()
     for i, cls in enumerate(sorted(gdf[class_field].unique())):
+        cls=str(cls)
         categories.append({"id": i, "name": cls, "supercategory": "objects"})
         category_map[cls] = i
 
@@ -184,5 +185,6 @@ geotiff_to_coco_tiles(
     overlap=200,
     output_format="jpg"
 )
+
 
 
