@@ -146,7 +146,7 @@ def geotiff_to_coco_tiles(
                     coco_output["annotations"].append({
                         "id": ann_id,
                         "image_id": img_id,
-                        "category_id": category_map[row[class_field]],
+                        "category_id": category_map[str(row[class_field])],
                         "bbox": [float(x_min), float(y_min), float(w), float(h)],
                         "area": float(w * h),
                         "segmentation": [coords],  # nested LIST
@@ -185,6 +185,7 @@ geotiff_to_coco_tiles(
     overlap=200,
     output_format="jpg"
 )
+
 
 
 
